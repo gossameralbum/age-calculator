@@ -1,0 +1,45 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    line-height: 1.5;
+    gap: 9px;
+    padding: 40px;
+    background-color: deeppink;
+    border-radius: 50px;
+    border-style: none;
+    box-shadow: 0 0 10px 0 deeppink;
+}
+
+#btn, #birthday {
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+    border-style: none;
+    padding: 8px;
+}
+#btn:hover {
+    color: white;
+    background-color: black;
+}
+
+#btn:active {
+    transform: scale(0.95);
+}
+#birthday:focus {
+    outline: none;
+}
+
+#birthday:active {
+    transform: scale(0.95);
+}
