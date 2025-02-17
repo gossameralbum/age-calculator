@@ -7,7 +7,10 @@ const result = document.getElementById("result");
 button.addEventListener("click", () => {
   const date = new Date(birthday.value);
   const today = new Date();
-  const age = today.getFullYear() - date.getFullYear();
+  let age = today.getFullYear() - date.getFullYear();
+  if (today.getMonth() < date.getMonth()) {
+    age--;
+    }
   if (age >= 0) {
       agenumber.textContent = age;
       error.textContent = "";
@@ -16,4 +19,5 @@ button.addEventListener("click", () => {
         error.textContent = "invalid date!";
         result.hidden = true;
   }
-});
+}
+);
